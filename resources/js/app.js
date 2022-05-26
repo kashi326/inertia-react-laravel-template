@@ -20,7 +20,7 @@ require("./bootstrap");
 
 createInertiaApp({
     resolve: (name) => require(`./Pages/${name}`),
-    setup({ el, App, props }) {
+    setup({el, App, props}) {
         render(<App {...props} />, el);
     },
-});
+}).then(r => console.clear());

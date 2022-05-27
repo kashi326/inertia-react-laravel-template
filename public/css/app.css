@@ -11313,6 +11313,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .login-container .login-card .login-card-header {
   width: 400px;

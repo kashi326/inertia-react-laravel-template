@@ -11468,17 +11468,20 @@ input.field-input:-ms-input-placeholder {
 }
 
 .feather-container {
-  transform: rotate(89deg);
-  width: 700px;
-  height: 700px;
+  transform: rotate(90deg);
+  width: 300px;
+  height: 300px;
   position: relative;
-  left: -60px;
-  top: -79px;
+  left: -359px;
+  top: -167px;
+  -webkit-clip-path: inset(-32px -131px 10px 90px);
+          clip-path: inset(-32px -131px 10px 90px);
+  z-index: 0;
 }
 
 .box {
-  width: 700px;
-  height: 700px;
+  width: 300px;
+  height: 300px;
   border-top-left-radius: 100%;
   border-bottom-right-radius: 100%;
   background-color: #3f4d8e;
@@ -11487,15 +11490,15 @@ input.field-input:-ms-input-placeholder {
 }
 
 .box2 {
-  width: 700px;
-  height: 700px;
+  width: 300px;
+  height: 300px;
   border-top-left-radius: 100%;
   border-bottom-right-radius: 100%;
   background-color: #397c90;
   position: absolute;
-  top: 176px;
+  top: 77px;
   transform: rotate(25deg);
-  left: 117px;
+  left: 48px;
   opacity: 0.7;
 }
 

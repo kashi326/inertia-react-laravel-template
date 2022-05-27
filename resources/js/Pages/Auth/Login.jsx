@@ -5,15 +5,16 @@ const Login = () => {
 
     return (
         <div className="login-container">
-            <div className="feather-container">
-                <div className="box">
 
-                </div>
-                <div className="box2">
-
-                </div>
-            </div>
             <div className={"login-card"}>
+                <div className="feather-container">
+                    <div className="box">
+
+                    </div>
+                    <div className="box2">
+
+                    </div>
+                </div>
                 <div className="login-card-header">
                     <h3 className={"login-card-header-title"}>Login</h3>
                     <p>Please enter your credential </p>

@@ -13,8 +13,8 @@
 
 
 ## Features
-* Laravel 9.x
-* React 18.x
-* InertiaJS (server-side: 0.5.4 & client-side:0.11.x)
-* Sass (SCSS) 1.52.x
+* Laravel 8.x
+* React 17.x
+* InertiaJS (server-side: 0.4.4 & client-side:0.10.x)
+* Sass (SCSS) 1.49.x
 * ziggy (Laravel named routes on frontend)

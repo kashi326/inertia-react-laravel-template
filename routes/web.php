@@ -12,8 +12,12 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
  */
+
 use Inertia\Inertia;
 
 Route::get('login', function () {
     return Inertia::render('Auth/Login');
 });
+Route::get('{any}', function () {
+    return redirect('/login');
+})->where('any', '.*');

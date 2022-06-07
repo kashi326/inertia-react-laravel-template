@@ -1,5 +1,4 @@
-$field-container-padding: 10px;
-$label-padding: $field-container-padding !default;
+
 @mixin width-center {
     width: 400px;
     margin-left: auto;
@@ -26,7 +25,7 @@ $label-padding: $field-container-padding !default;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-overflow: hidden;
+        overflow: hidden;
         .login-card-header {
             @include width-center;
             display: flex;
@@ -63,7 +62,7 @@ overflow: hidden;
 .field-placeholder {
     position: absolute;
     top: 50%;
-    transform: translate(#{$label-padding}, -50%);
+    transform: translate(var(--label-padding), -50%);
     pointer-events: none;
     transition: all .14s ease-in-out;
     font-size: 18px;
@@ -73,7 +72,7 @@ overflow: hidden;
 
 input.field-input {
     border: none;
-    padding: $label-padding;
+    padding: var(--label-padding);
     font-size: 16px;
     display: block;
     box-sizing: border-box;
@@ -90,15 +89,15 @@ input.field-input {
 
     &.c-fix,
     &:focus,
-    &:not(:placeholder-shown),
+    &:not(:placeholder-shown)
     {
         border-color: transparent;
 
-        ~ label {
+        &~ label {
             color: white;
             font-size: 11px;
             top: calc(30% - .8rem);
-            transform: translate(#{$label-padding}, 0%);
+            transform: translate(#{var(--label-padding)}, 0%);
         }
     }
 
@@ -181,7 +180,7 @@ input.field-input {
     height: 300px;
     position: relative;
     left: -359px;
-    top: -167px;
+    top: -175px;
     clip-path: inset(-32px -131px 10px 90px);
     z-index: 0;
 }

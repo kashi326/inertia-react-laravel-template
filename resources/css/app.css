@@ -1,1 +1,19 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* default imports */
+@import "./variables.css";  
+@import "./reset.css";  
+@import "./typography.css";  
+@import "./utilities.css";  
+
+
+
+
+/* imports */
+@import "./antdDefaults.scss";  
+@import "./index.scss";  
+

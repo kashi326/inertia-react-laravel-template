@@ -1,0 +1,4 @@
+:root {
+    --field-container-padding: 10px;
+    --label-padding: var(--field-container-padding) !important;
+}

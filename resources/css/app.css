@@ -1,22 +1,19 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-@import "./Pages/login.scss";
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* default imports */
+@import "./variables.css";  
+@import "./reset.css";  
+@import "./typography.css";  
+@import "./utilities.css";  
 
 
 
-/* // fonts cdn */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
+/* imports */
+@import "./antdDefaults.scss";  
+@import "./index.scss";  
 
-/* // Bootstrap */
-body{
-    height: 100%;
-    background: #43425d;
-}

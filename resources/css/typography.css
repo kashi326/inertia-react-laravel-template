@@ -1,0 +1,25 @@
+* {
+    scrollbar-color: #dbdbdb transparent;
+    scrollbar-width: thin;
+}
+
+*::-webkit-scrollbar,
+html::-webkit-scrollbar {
+    width: 8px;
+}
+
+*::-webkit-scrollbar-track,
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+*::-webkit-scrollbar-thumb,
+html::-webkit-scrollbar-thumb {
+    background-color: #dbdbdb;
+}
+
+
+body {
+    font-family: "Poppins", sans-serif !important;
+    height: 100%;
+    background: #43425d;
+}

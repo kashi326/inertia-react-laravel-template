@@ -1,8 +1,3 @@
-:root {
-    --field-container-padding: 10px;
-    --label-padding: var(--field-container-padding) !important;
-}
-
 
 @mixin width-center {
     width: 400px;
@@ -30,7 +25,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-overflow: hidden;
+        overflow: hidden;
         .login-card-header {
             @include width-center;
             display: flex;
@@ -67,7 +62,7 @@ overflow: hidden;
 .field-placeholder {
     position: absolute;
     top: 50%;
-    transform: translate(#{var(--label-padding)}, -50%);
+    transform: translate(var(--label-padding), -50%);
     pointer-events: none;
     transition: all .14s ease-in-out;
     font-size: 18px;
@@ -185,7 +180,7 @@ input.field-input {
     height: 300px;
     position: relative;
     left: -359px;
-    top: -167px;
+    top: -175px;
     clip-path: inset(-32px -131px 10px 90px);
     z-index: 0;
 }

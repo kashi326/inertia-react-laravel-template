@@ -13,8 +13,8 @@
             @php
                 $manifest = json_decode(file_get_contents(public_path('build/manifest.json')), true);
             @endphp
-            <script type="module" src="/build/{$manifest['resources/js/app.js']['file']}"></script>
-            <link rel="stylesheet" href="/build/{$manifest['resources/js/app.js']['css'][0]}">
+            <script type="module" src="/build/{$manifest['resources/views/app.js']['file']}"></script>
+            <link rel="stylesheet" href="/build/{$manifest['resources/views/app.js']['css'][0]}">
         @else
             <script type="module">
                 import RefreshRuntime from "http://localhost:3000/@react-refresh"
@@ -24,7 +24,7 @@
                 window.__vite_plugin_react_preamble_installed__ = true
             </script>
             <script type="module" src="http://localhost:3000/@vite/client"></script>
-            <script type="module" src="http://localhost:3000/resources/js/app.jsx"></script>
+            <script type="module" src="http://localhost:3000/resources/scripts/app.jsx"></script>
         @endproduction
 
         <!-- Fonts -->

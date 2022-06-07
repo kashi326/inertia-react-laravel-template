@@ -7,13 +7,13 @@ import { render } from 'react-dom';
 import { App } from '@inertiajs/inertia-react';
 import { InertiaProgress } from '@inertiajs/progress';
 
-const modules = import.meta.glob('./Pages/**/*.jsx');
+const modules = import.meta.glob('../views/pages/**/*.jsx');
 
 const el = document.getElementById('app');
 
 render(
     <App initialPage={JSON.parse(el.dataset.page)} resolveComponent={async (name) => {
-        const page = Object.keys(modules).find(x => x.replace('./Pages/', '').indexOf(name) != -1);
+        const page = Object.keys(modules).find(x => x.replace('../views/pages/', '').indexOf(name) != -1);
         return (await (modules[page])()).default
     }} />,
     el

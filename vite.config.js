@@ -11,12 +11,12 @@ export default ({ command }) => ({
         manifest: true,
         outDir: 'public/dist',
         rollupOptions: {
-            input: 'resources/js/app.jsx',
+            input: 'resources/scripts/app.jsx',
         },
     },
     resolve: {
         alias: {
-            '@': resolve('./resources/js')
+            '@': resolve('./resources/views')
         },
     },
     plugins: [

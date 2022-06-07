@@ -76,8 +76,6 @@ function (params) {
   <div style="color: pink;font-size: 17px"> Styling & tailwindcss</div>
 
 
-  <p style="color: gray;font-size: 14px">Note -> import and nesting plugin (postcss) is added in the configuration, you can use the nesting by creating .scss files.</p>
-
 
  
   
